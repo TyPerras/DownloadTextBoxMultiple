@@ -22,51 +22,98 @@
 
 	<div class="container-fluid">
 		<main>
+			
+			<h2>Single Downloadable Text Area</h2>
 
-			<h2>Multiple Downloadable Text Areas</h2>
+
+			<!-- START QUESTION 1 -->
+
 
 			<section class="answerTextInputActivityContainer">
 
-				<form>
+				<div class="questionContainer">
+					<span class="questionTitle">Why is it called the Solar System?</span>
 
-					<div>
-						<span class="questionTitle">Why is it called the Solar System?</span>
-
-						<label for="answerTextarea" class="answerActivityTextareaLabel">
-							<textarea id="answerTextarea" class="answerActivityTextarea" placeholder="Answer Text..." required></textarea>
-						</label>
-					</div>
-
-
-					<div>
-						<span class="questionTitle">Second question here?</span>
-
-						<label for="answerTextarea" class="answerActivityTextareaLabel">
-							<textarea id="answerTextarea" class="answerActivityTextarea" placeholder="Answer Text..." required></textarea>
-						</label>
-					</div>
-
-
-					<div>
-						<span class="questionTitle">Third question here?</span>
-
-						<label for="answerTextarea" class="answerActivityTextareaLabel">
-							<textarea id="answerTextarea" class="answerActivityTextarea" placeholder="Answer Text..." required></textarea>
-						</label>
-					</div>
-
-
-					<label for="answerFileName" class="answerActivityFileNameInputLabel">
-						Specify a filename to save your answers: 
-						<input id="answerFileName" placeholder="Filename..." class="answerActivityFileNameInput" required> .txt
+					<label for="answerTextarea" class="answerActivityTextareaLabel">
+						<textarea id="answerTextarea" class="form-control answerActivityTextarea" placeholder="Answer Text..."></textarea>
 					</label>
+				</div>
+
+				<label for="answerFileName" class="answerActivityFileNameInputLabel">
+					Specify a filename to save your answers: 
+
+					<div class="has-validation inlineBlockInputField">
+						<input type="text" class="form-control answerActivityFileNameInput" id="answerFileName" aria-describedby="inputGroupPrepend" required="">
+						<div class="invalid-feedback">
+							Please provide a filename.
+						</div>
+					</div>
+					.txt
+
+					<!-- <input id="answerFileName" placeholder="" class="form-control answerActivityFileNameInput" required> .txt -->
+				</label>
 
 
-					<button type="submit" class="btn btn-primary btn-lg btn-block btn-downloadAnswerText">Save as Text File</button>
-
-				</form>
+				<button type="submit" class="btn btn-primary btn-lg btn-block btn-downloadAnswerText">Save as Text File</button>
 
 			</section>
+
+
+			<!-- END QUESTION 1 -->
+
+
+			<h2>Multiple Downloadable Text Areas</h2>
+
+
+			<!-- START QUESTION 2 -->
+
+
+			<section class="answerTextInputActivityContainer">
+
+				<div class="questionContainer">
+					<span class="questionTitle">Why is it called the Solar System?</span>
+
+					<label for="answerTextarea" class="answerActivityTextareaLabel">
+						<textarea id="answerTextarea" class="form-control answerActivityTextarea" placeholder="Answer Text..."></textarea>
+					</label>
+				</div>
+
+				<div class="questionContainer">
+					<span class="questionTitle">Why is it called the Solar System?</span>
+
+					<label for="answerTextarea" class="answerActivityTextareaLabel">
+						<textarea id="answerTextarea" class="form-control answerActivityTextarea" placeholder="Answer Text..."></textarea>
+					</label>
+				</div>
+
+				<div class="questionContainer">
+					<span class="questionTitle">Why is it called the Solar System?</span>
+
+					<label for="answerTextarea" class="answerActivityTextareaLabel">
+						<textarea id="answerTextarea" class="form-control answerActivityTextarea" placeholder="Answer Text..."></textarea>
+					</label>
+				</div>
+
+				<label for="answerFileName" class="answerActivityFileNameInputLabel">
+					Specify a filename to save your answers: 
+
+					<div class="has-validation inlineBlockInputField">
+						<input type="text" class="form-control answerActivityFileNameInput" id="answerFileName" aria-describedby="inputGroupPrepend" required="">
+						<div class="invalid-feedback">
+							Please provide a filename.
+						</div>
+					</div>
+					.txt
+
+				</label>
+
+
+				<button type="submit" class="btn btn-primary btn-lg btn-block btn-downloadAnswerText">Save as Text File</button>
+
+			</section>
+
+
+			<!-- END QUESTION 2 -->
 
 
 
